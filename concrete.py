@@ -8,7 +8,7 @@ def predict_rating(model, df):
     predictions_data = predict_model(estimator = model, data = df)
     
     return predictions_data['Label'][0]
-model = load_model('catboost')
+model = load_model('catboost.pkl')
 #model=pickle.load(open('catboost.pkl','rb'))
 st.title('Concrete Comprehensive Strength')
 st.write('This is a web app to predict the concrete comprehensive strength based on\
